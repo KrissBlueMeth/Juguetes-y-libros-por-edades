@@ -1,0 +1,156 @@
+body {
+    background-image: url("img/fondojuguetes.webp");  /* Ruta de la imagen */
+    background-size: cover;  /* Hace que la imagen cubra todo el fondo */
+    background-position: center center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    position: relative;
+    color: black;  /* Color de texto blanco para contraste */
+    background-attachment: fixed;  /* Para que la imagen se quede fija al hacer scroll */
+}
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px; /* Aseguramos que el header tenga una altura constante */
+    margin-top: 10px; /* Agregamos un margen superior */
+}
+
+.logo-container {
+    flex: 1; /* Deja que ocupe el espacio necesario */
+    display: flex;
+    justify-content: flex-start; /* Alinea el logo a la izquierda */
+    align-items: center; /* Alinea el logo verticalmente al centro */
+}
+
+.nav-container{
+    display: flex;
+    justify-content: center; /* Esto centra el menú horizontalmente */
+    width: 100%; /* Asegura que el contenedor del menú ocupe el 100% del espacio disponible */
+}
+
+.menu {
+    text-transform: uppercase;
+    display: flex; /* Asegura que los elementos de la lista se alineen en fila */
+    justify-content: center; /* Centra las opciones del menú dentro de su contenedor */
+    margin: 0; /* Elimina el margen adicional */
+}
+
+.menu ul {
+    list-style: none;         /* Elimina los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Mostrar las opciones de menú en línea */
+    justify-content: center; /* Centra las opciones del menú horizontalmente */
+}    
+
+.menu li {
+    margin-left: 20px;        /* Espacio entre los items del menú */
+    padding: 5px 15px;        /* Añadimos algo de padding a los elementos del menú */
+    background-color: #f0f0f0; /* Fondo de color para cada casilla */
+    border-radius: 10px;      /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Animación suave para el cambio de color */
+}
+
+.menu li:hover {
+    background-color: rgba(0, 123, 255, 0.3); /* Azul con transparencia (0.3 es la opacidad) */
+    color: white;              /* Cambia el color del texto cuando se pasa el ratón */
+}
+
+.menu a{
+    text-decoration: none;    /* Elimina el subrayado de los enlaces */
+    color: #333;              /* Color del texto */
+    font-size: 22px;          /* Tamaño de la fuente */
+    font-weight: bold;        /* Hacer la fuente en negrita */
+    padding: 0;         /* Espaciado alrededor del texto */
+    
+}
+
+.menu a:hover {
+    color: #007BFF;           /* Cambio de color al pasar el ratón por encima */
+}
+
+.logo {
+    width: 150px ; 
+    height: auto ; 
+}
+.titulo-intro {
+    background-color: rgba(252, 252, 249, 0.7); /* Fondo amarillo clarito con opacidad */
+    padding: 80px; /* Espacio alrededor del texto */
+    display: inline-block; /* Hace que el fondo amarillo se ajuste al tamaño del texto */
+    margin: 0 auto; /* Centra el contenido */
+    border-radius: 50px; /* Bordes redondeados */
+    margin-top: 30px; /* Agrega un espacio entre el logo y el texto */
+    font-size: 30px;
+    font-family:sans-serif;
+    text-align: justify;/* Centra el texto */
+}
+*/ /* Esta mierda si la quito se me descoloca el texto....así que aquí se queda */
+
+
+.titulo-intro p {
+    font-size: 30px;
+    text-align:justify; /* Justifica el texto */
+    max-width: 1000px; /* Limita el ancho del texto para que no se estire demasiado */
+    margin-left: auto;
+    margin-right: auto; /* Centra el texto en el contenedor */
+}
+
+.titulo-intro h1 {
+    background-color: rgba(233, 242, 136, 0.6); /* Fondo amarillo clarito con opacidad */
+    margin: 0 auto;
+    border-radius: 40px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .imagenes-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2cm; /* Espacio entre las imágenes */
+        margin-top: 50px;
+        width: 100%; /* Aseguramos que el contenedor ocupa todo el espacio disponible */
+        max-width: 1000px; /* Limita el ancho máximo del contenedor de las imágenes */
+        margin-left: auto;
+        margin-right: auto; /* Centra el contenedor de imágenes */
+    }
+    
+    .imagen-container {
+        text-align: center; /* Centra el pie de foto debajo de la imagen */
+        display: flex;
+        flex-direction: column; /* Coloca los elementos (imagen y pie de foto) en columna */
+        align-items: center; /* Centra los elementos (imagen y pie de foto) en el eje horizontal */
+        flex: 1;  /* Asegura que el contenedor ocupe el espacio necesario */
+    }
+    
+    .pie-de-foto {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase; /* Mayúsculas */
+        margin-top: 10px; /* Separación del pie de foto de la imagen */
+        text-align: center; /* Centra el texto */
+    }
+    
+    .pie-de-foto a {
+        text-decoration: none; /* Elimina el subrayado */
+        color: #333; /* Color del texto */
+    }
+    
+    .pie-de-foto a:hover {
+        color: #007BFF; /* Cambia el color al pasar el ratón por encima */
+    }
+    
+    .imagen-izquierda, .imagen-derecha{   
+        max-width: 100% ;  /* Máximo de 100% del ancho del contenedor */
+        height: auto ;    /* Mantiene la relación de aspecto */
+        object-fit: contain;  /* Asegura que la imagen se ajuste sin perder su proporción */
+    }
+@media (max-width: 768px) {
+    .imagen-izquierda, .imagen-derecha {
+        max-width: 80%;  /* Las imágenes ocupan más espacio en pantallas pequeñas */
+    }
+}
+
