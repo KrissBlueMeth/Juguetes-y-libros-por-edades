@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="/styles/styles-comunes.css">
+</head>
+<body>
+    <header id="header">
+    
+        <div class="logo-container">
+         <img src="/img/Logojuguetes.png" alt="Logo" class="logo">
+        </div>
+        <div class="nav-container">
+             <nav class="menu">
+                 <ul>
+                     <li><a href="/index.html">Inicio</a></li>
+                     <li><a href="/juguetesporedades.html">Juguetes por edades</a></li>
+                     <li><a href="/librosporedades.html">Libros por edades</a></li>
+                     <!-- <li><a href="recursosyactividades.html">Recursos y actividades</a></li> -->
+                 </ul>
+             </nav>
+
+        </div>
+ </header>
+
+ <!-- HAY QUE METER ESTILOS CHULOS AL FORMULARIO -->
+ <h1>Formulario de Contacto</h1>
+
+ <form action="mailto:cristinasalazarguijarro@gmail.com" method="POST" enctype="text/plain">
+   <label for="name">Nombre:</label><br>
+   <input type="text" id="name" name="name" required><br><br>
+   
+   <label for="email">Correo electrónico:</label><br>
+   <input type="email" id="email" name="email" required><br><br>
+   
+   <label for="message">Consulta:</label><br>
+   <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+   
+   <input type="submit" value="Enviar">
+   <input type="reset" value="Limpiar">
+ </form>
+
+ <footer>
+    <div class="footer-container">
+        <ul>
+            <li> <a href="Politica-de-privacidad.html">Política de privacidad</a></li>
+            <li> <a href="Terminos-y-condiciones.html">Términos y condiciones</a></li>
+            <li> <a href="Acerca-de-mi.html">Acerca de mí</a></li>
+            <li> <a href="Formulario.html">Formulario de contacto</a></li>
+        </ul>
+    </div>
+</footer>
+    
+</body>
+</html>
