@@ -1,5 +1,5 @@
 body {
-    background-image: url("/img/fondojuguetes.webp");  /* Ruta de la imagen */
+    background-image: url("../img/fondojuguetes.webp");  /* Ruta de la imagen */
     background-size: cover;  /* Hace que la imagen cubra todo el fondo */
     background-position: center center;  /* Centra la imagen */
     background-repeat: no-repeat;  /* Evita que la imagen se repita */
